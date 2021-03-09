@@ -1,0 +1,19 @@
+ body 
+ {
+  background: url(662772.jpg);
+  background-repeat: no-repeat;
+  background-size: 1920px 1080px;
+  background-origin: content-box, padding-box;
+}
+
+body {
+	font-family:'Open Sans', Arial, sans-serif;
+	font-size:18.8px;
+	font-weight:400;
+	line-height:1.6em;
+	color:#29a329;
+	text-shadow: black 0px 0px 20px;
+}
+
+
+

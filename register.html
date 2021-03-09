@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login & Registration</title>
+	<link rel="stylesheet" href="project_css_home.css">
+	<link rel="stylesheet" href="register_style.css">
+</head>
+<body>
+ <header>
+            <div class="flex">
+                <div class="logo">
+                    <a href="#"><img src="logo.png" alt="Game Warrior Logo" /></a>
+                < /div>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+                    <ul id="nav-menu-container">
+                            <li><a href="project_html_home.html">Home</a></li>
+                        
+                        <li><a href="project_Html_blogs page.html">Blog</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                        
+                    </ul>
+                </nav>
+                
+            </div>
+        </header>
+	
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+		
+			<div class="soical-icons">
+				<a href="#"><i class="fa fa-facebook-square  fa-6"></i></a>
+				<a href="#"><i class="fa fa-google-plus-square fa-6"></i></a>
+				<a href="#"><i class="fa fa-twitter-square fa-6"></i></a>
+			</div>
+
+			<form id="login" class="input-group">
+				<input type="text" class="input-field" placeholder="User Id" required />
+				<input type="text" class="input-field" placeholder="Enter Password" required />
+				<input type="checkbox" class="check-box" /><span>Remember Password</span>
+				<button type="submit" class="submit-btn">Log In</button>
+			</form>
+
+			<form id="register" class="input-group">
+				<input type="text" class="input-field" placeholder="User Id" required />
+				<input type="email" class="input-field" placeholder="Enter Email" required />
+				<input type="text" class="input-field" placeholder="Enter Password" required />
+				<input type="checkbox" class="check-box" /><span>I agree to the terms & conditions</span>
+				<button type="submit" class="submit-btn">Register</button>
+			</form>
+		</div>
+	</div>
+
+
+	
+	<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn");
+
+		function register() {
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+		}
+
+		function login() {
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0";
+		}
+
+	</script>
+</body>
+</html

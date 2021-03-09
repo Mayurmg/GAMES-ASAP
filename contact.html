@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title>Contact us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="contact_style.css">
+<link rel="stylesheet" href="project_css_home.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="flex">
+                <div class="logo">
+                    <a href="#"><img src="logo.png" alt="Game Warrior Logo" /></a>
+                < /div>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+                    <ul id="nav-menu-container">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </header>
+        <main>
+            
+         <div class="wrapper">
+  <div class="title">
+    <h1>Contact Us Form</h1>
+  </div>
+  <div class="contact-form">
+    <div class="input-fields">
+      <input type="text" class="input" placeholder="Name">
+      <input type="email" class="input" placeholder="Email">
+      <input type="text" class="input" placeholder="Phone">
+      <input type="text" class="input" placeholder="Subject">
+    </div>
+    <div class="msg">
+      <ul><textarea placeholder="Message"></textarea></ul>
+      <ul><div class="btn">send</div></ul>
+    </div>
+  </div>
+</div>   
+        </main>
+
+ 
+
+        <script>
+            document.getElementById('nav-toggle').addEventListener('click', function () {
+                let navMenu = document.getElementById('nav-menu-container');
+                navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+            });
+        </script>
+    </body>
+</html>     
